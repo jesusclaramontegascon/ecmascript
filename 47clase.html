@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+class Cuadrado
+{
+	constructor(lado)
+	{
+    this.lado=2;
+    var resultado=this.lado*4;
+    console.log("resultado",resultado);
+    console.log("lado",lado);
+	}
+
+	getArea()
+	{return this.lado*this.lado;}
+}
+
+let mesa=new Cuadrado(10);
+var llamadaObjeto=mesa.getArea();
+
+console.log("mesa",mesa);
+console.log(llamadaObjeto);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<p>Click the button to get every element in the array has a value above a specific number.</p>
+<p>Minimum age: <input type="number" id="ageToCheck" value="18"></p>
+<button onclick="myFunction()">Try it</button>
+
+<p>All ages above minimum: <span id="demo"></span></p>
+
+<script>
+
+let numbers = [1,5,23,4,12,45,78,8,8.9,10,11,3.4,10.1,84,6];
+let greaterTen = [];
+
+for (let i = 0; i<numbers.length; i++) {
+  var currentNumber = numbers[i];
+  if (currentNumber > 10) {
+    greaterTen.push(currentNumber)
+  }
+}
+
+console.log(greaterTen);
+
+let greaterTen2 = numbers.filter(number => number >= 23 );
+console.log(greaterTen2);
+</script>
+
+</body>
+</html>

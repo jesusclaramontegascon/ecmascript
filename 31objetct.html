@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+
+<script>
+  function mezclar(objReceptor,objDonador)
+  {
+  	/*
+  	Object.keys(objDonador).foreach(function(key))
+  	{
+
+  	});*/
+  	Object.keys(objDonador).foreach(function(key){
+
+  		objReceptor[key]=objDonador[key];
+
+  	});
+
+  	return objReceptor;
+  }
+
+  var objReceptor={};
+  var objDonador={
+  	
+  	get nombre()
+    {
+    	return "mi-archivo.js";
+    }
+
+  }
+
+  var llamada_mezclar=mezclar(objReceptor,objDonador);
+  
+  console.log("*******************");
+  console.log(llamada_mezclar);
+  console.log("*******************");
+</script>
+
+</body>
+</html>

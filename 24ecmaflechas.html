@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+	
+var miFuncion2=function (valor){
+	return valor;
+
+}
+let miFuncion1 = valor => valor;
+var llamada_miFuncion2=miFuncion2("valorfuncion2");
+console.log(miFuncion1);
+console.log("mifuncion2",llamada_miFuncion2);
+
+
+var sumar2=function (num1,num2)
+{
+	return num1+num2;
+
+}
+
+let sumar1=(num1,num2)=>num1+num2;
+console.log("sumar2",sumar2);
+console.log("sumar1",sumar1);
+
+var saludar2=function ()
+{
+ return "Hola mundo";
+}
+
+let saludar1=()=>"Hola mundo";
+
+console.log("saludar2",saludar2);
+console.log("saludar1",saludar1);
+
+var saludarPersona=function(nombre)
+{
+	var salida="Hola"+nombre;
+	return salida;
+}
+var resultado_saludarPersona=saludarPersona("fidel")
+console.log(resultado_saludarPersona);
+
+let saludarPersona2=nombre=>
+{
+	let salida=`Hola ${nombre}`;
+	return salida;
+}
+
+var llamada_saludarPersona2=saludarPersona2("Persona2");
+console.log("llamada_saludarPersona2",llamada_saludarPersona2);
+
+/*funcion anomima*/
+var saludoejemplo=function(valorsaludo)
+{
+	return " Hola "+valorsaludo;
+}("Jesus claramonte gascon");
+
+console.log(saludoejemplo);
+
+var saludoejemplo2=(nombre=>`Hola ${nombre}`)("Jesús Claramonte 2");
+console.log(saludoejemplo2);
+
+
+/*
+var obtenerLibro=function(id)
+{
+	return 
+	{
+		id:id,
+		nombre:"Harry Potter",
+	}
+}
+
+var llamada_obtenerLibro=obtenerLibro(1);
+*/
+</script>
+
+</body>
+</html>

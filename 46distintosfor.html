@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+let numeros=[1,2,3,4,5,6,7,8,9,10];
+for (let i=0;i<numeros.length;i++)
+{console.log(numeros[i]);}
+
+console.log("foreach");
+ for (let i in numeros)
+ {console.log(numeros[i]);}
+
+
+let personas=
+[ {nombre:"fernando",apellido:"perez"},
+  {nombre:"maria",apellido:"gascon"},
+];
+
+console.log("******for of let******");
+for (per of personas)
+{console.log(per.nombre);}
+
+
+
+let setpersonas= new Set();
+setpersonas.add({nombre:"fernando",apellido:"perez"});
+setpersonas.add({nombre:"fernando2",apellido:"perez2"});
+
+console.log("******for of set******");
+for (per2 of setpersonas)
+{console.log(per2.nombre);}
+
+
+
+let nuevomapa=new Map([["jesus","maria"],["jose","josefa"]]);
+console.log("******for of map******");
+for (per3 of nuevomapa)
+{console.log(per3);}
+
+
+</script>
+
+</body>
+</html>

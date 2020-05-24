@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+	let set= new WeakSet();
+	
+	let persona1=
+	{ nombre:"Jesús Claramonte"
+
+	};
+
+    let mapa= new Map();
+    mapa.set("nombre","jesus");
+    mapa.set("valor1",23);
+
+    console.log(mapa);
+    console.log("mapa.getnombre",mapa.get("nombre"));
+    console.log("mapa.getvalor1",mapa.get("valor1"));
+    console.log(mapa.size);
+    console.log(mapa.has("nombre"));
+
+  
+  let mapa2=new Map([["jesus","maria"],["jose","josefa"]]);
+
+
+  mapa2.forEach(function (valor2,key2,set2)
+{
+console.log("valor",valor2);
+console.log("key",key2);
+console.log("set",set2);
+});
+
+  console.log(mapa2);
+
+</script>
+
+</body>
+</html>

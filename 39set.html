@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+let items=new Set();
+items.add(1);
+items.add(2);
+items.add(3);
+items.add(4);
+items.add(5);
+items.add(6);
+items.add(7);
+items.add(8);
+items.add(9);
+
+let items2=new Set([1,2,3,4,5,1,1,1,"1"]);
+
+
+console.log(items);
+console.log(items.size);
+
+console.log(items2);
+console.log(items2.size);
+
+
+var busqueda1=items.has("1");
+var busqueda2=items2.has("1");
+console.log(busqueda1);
+console.log(busqueda2);
+</script>
+
+</body>
+</html>

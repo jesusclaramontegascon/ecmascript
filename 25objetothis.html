@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+	/*ejemplo1*/
+var manejador={
+	id:"10023",
+	valor:"valor",
+
+	init:function()
+	{
+		console.log("esto es el init");
+		document.addEventListener("click", function(){
+		console.log(window.location);
+        //console.log(this.window.document.body);
+        //this.clickeado(event.type);
+		});
+
+	},
+
+	
+};
+var id=manejador.id;
+var valor=manejador.valor;
+
+console.log("manejador",manejador);
+console.log("manejador.id",id);
+console.log("manejador.valor",valor);
+
+
+manejador.init();
+</script>
+
+</body>
+</html>

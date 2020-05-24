@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>JavaScript uses names to access object properties.</p>
+<div id="demo"></div>
+
+<script>
+
+let autoGuardado=
+{  archivo:"app.js",
+   cursor: 
+   {
+   	 linea:7,
+   	 columna:16
+   },
+   ultimoArchivo:
+   { archivo:"index.html",
+     cursor2: 
+     {
+     	 linea2:2,
+     	 columna:20
+     }
+
+   }
+};
+
+console.log("autoGuardado",autoGuardado);
+console.log("autoGuardado.archivo",autoGuardado.archivo);
+console.log("autoGuardado.cursor.linea",autoGuardado.cursor.linea);
+console.log("autoGuardado.ultimoArchivo",autoGuardado.ultimoArchivo);
+console.log("autoGuardado.ultimoArchivo.archivo",autoGuardado.ultimoArchivo.archivo);
+console.log("autoGuardado.ultimoArchivo.cursor2",autoGuardado.ultimoArchivo.cursor2);
+console.log("autoGuardado.ultimoArchivo.cursor2.linea2",autoGuardado.ultimoArchivo.cursor2.linea2);
+
+
+</script>
+
+</body>
+</html>

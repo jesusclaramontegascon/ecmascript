@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+
+var apellido="primer apellido";
+var objeto={
+"primero":"Valor primero",
+["segundo"] : "Segundo"
+};
+
+
+var llamadaobjeto_objetoprimero=objeto["primero"];
+var valor_objetoprimero=objeto.primero;
+
+console.log("llamadaobjeto_objetoprimero",llamadaobjeto_objetoprimero);
+console.log("valor_objetoprimero",valor_objetoprimero);
+console.log("objetosegundo",objeto["segundo"]);
+console.log("obejto_segundo vector",objeto.segundo)
+
+
+var subFijo1="nombre";
+var subFijo2="apellido";
+
+var persona=
+{
+	["primer"+subFijo1]:"Jesús",
+	["segundo"+subFijo2]:"Claramonte",
+};
+
+console.log("primer+subFijo1",["primer"+subFijo1]);
+
+console.log(persona);
+
+console.log("primer.nombre",persona.primernombre);
+console.log("primer.nombre",persona.segundoapellido);
+</script>
+
+</body>
+</html>

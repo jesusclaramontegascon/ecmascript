@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>JavaScript uses names to access object properties.</p>
+<div id="demo"></div>
+
+<script>
+
+let persona=
+{
+	saludar()
+	{
+		return "Hola";
+	}
+};
+
+let amigo=
+{
+	saludar2()
+	{   var prototipado=Object.getPrototypeOf(this);
+		console.log("prototipado",prototipado);
+		console.log("prototipado.saludar",prototipado.saludar.name);
+		var llamada=Object.getPrototypeOf(this).saludar(this);
+		console.log("llamada",llamada);
+		return Object.getPrototypeOf(this).saludar(this)+", saludos!!";
+	}
+};
+Object.setPrototypeOf(amigo,persona);
+console.log(amigo.saludar2());
+</script>
+
+</body>
+</html>

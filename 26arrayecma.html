@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+var arreglo=["a","c","b"];
+var numeros=["5","2","8"];
+
+var ordenado=arreglo.sort();
+var ordenado2=numeros.sort();
+
+console.log("esto es el vector ordenado",ordenado);
+console.log("esto es el vector ordenado2",ordenado2);
+
+var matriz=[10,51,9,11,2,6,1,8];
+var ordenacion=matriz.sort(function(a,b)
+{
+return a-b;
+});
+
+let ordenadoES6=ordenacion.sort((a,b)=>a-b);
+
+console.log("esto es ordenacion simple");
+console.log(ordenacion);
+
+console.log("ordenadores6 es ecma");
+console.log(ordenadoES6);
+
+
+</script>
+
+</body>
+</html>
